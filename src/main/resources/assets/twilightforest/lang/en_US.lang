@@ -234,8 +234,8 @@ item.magicMap.name=Magic Map
 item.mazeMap.name=Maze Map
 item.oreMap.name=Maze/Ore Map
 item.tfFeather.name=Raven's Feather
-item.magicMapFocus.name=Magic Map Focus
-item.mazeMapFocus.name=Maze Map Focus
+item.magicMapFocus.name=Magic Focus
+item.mazeMapFocus.name=Maze Focus
 item.liveRoot.name=Liveroot
 item.ironwoodRaw.name=Raw Ironwood Materials
 item.ironwoodIngot.name=Ironwood Ingot
@@ -491,4 +491,4 @@ achievement.twilightProgressCastle.desc=What could even be in that castle?!?
 tooltip.tf.adherent=An Adherent, but to whom?
 tooltip.tf.harbinger=A Harbinger, but of what?
 
-chat.tf.wrongportalitem=Hm, what do you expect to happen? Try to use Quick and Dirty Portal Generator.
+chat.tf.wrongportalitem=Hm, what do you expect to happen? Try using a Magic Focus.
