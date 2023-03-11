@@ -3,5 +3,6 @@
 dependencies {
     compile("thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev")
 
+    compileOnly('curse.maven:skinport-234948:3212017')
     runtime("com.github.GTNewHorizons:Baubles:1.0.1.14:dev")
 }

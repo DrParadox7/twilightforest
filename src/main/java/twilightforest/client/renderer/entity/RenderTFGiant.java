@@ -1,9 +1,11 @@
 package twilightforest.client.renderer.entity;
 
+import cpw.mods.fml.common.Loader;
+import lain.mods.skinport.impl.forge.SkinPortModelPlayer;
+import net.minecraft.client.model.ModelBiped;
 import org.lwjgl.opengl.GL11;
 
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -14,7 +16,7 @@ public class RenderTFGiant extends RenderBiped {
     private ResourceLocation textureLoc;
 
     public RenderTFGiant() {
-        super(new ModelBiped(), 0.625F);
+        super(skinCompat(), 0.625F);
 
         this.textureLoc = new ResourceLocation("textures/entity/steve.png");
     }
@@ -28,6 +30,12 @@ public class RenderTFGiant extends RenderBiped {
         } else {
             return textureLoc;
         }
+    }
+    /**
+     * Compat for SkinPort
+     */
+    private static ModelBiped skinCompat() {
+        return Loader.isModLoaded("skinport") ? new SkinPortModelPlayer(0.0F, false) : new ModelBiped();
     }
 
     /**
